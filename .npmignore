@@ -8,7 +8,7 @@ build.xml
 node_modules/*
 npm-debug.log
 coverage
-*.ts
+#*.ts
 !*.d.ts
 tests
 typings
