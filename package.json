@@ -9,6 +9,7 @@
     "test-watch": "tsc && karma start --no-single-run --auto-watch",
     "commit": "npm run prepublish && npm test && git-cz",
     "prepublish": "typings install && tsc && node make.js",
+    "preinstall": "tsc",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "dependencies": {
