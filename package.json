@@ -6,7 +6,10 @@
   "typings": "./ng2-component.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "tsc"
+    "test-watch": "tsc && karma start --no-single-run --auto-watch",
+    "commit": "npm run prepublish && npm test && git-cz",
+    "prepublish": "typings install && tsc && node make.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "dependencies": {
     "@angular/common": "2.0.0-rc.3",
