@@ -1,9 +1,41 @@
-# Node generated files
-node_modules
+#################
+## Misc
+#################
+**/.DS_Store
+nbproject
+manifest.mf
+build.xml
+node_modules/*
 npm-debug.log
-# OS generated files
-Thumbs.db
-.DS_Store
-# Ignored files
+coverage
 *.ts
 !*.d.ts
+tests
+typings
+typings.json
+
+#################
+## JetBrains
+#################
+.idea
+.project
+.settings
+.idea/*
+*.iml
+
+############
+## Windows
+############
+
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+############
+## Mac
+############
+
+# Mac crap
+.DS_Store
