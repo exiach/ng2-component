@@ -7,6 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "test-watch": "tsc && karma start --no-single-run --auto-watch",
+    "postinstall": "typings install && tsc",
     "commit": "npm run prepublish && npm test && git-cz",
     "prepublish": "tsc",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
